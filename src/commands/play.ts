@@ -1,7 +1,7 @@
 import type { CustomClient } from '../types/index';
 import type { Message } from 'discord.js';
-import search from 'yt-search';
 import ytdl from 'ytdl-core-discord';
+const search: any = require('yt-search')
 
 const execute = (bot: CustomClient, msg: Message, args: Array<string>) => {
   const s = args.join(" ");
